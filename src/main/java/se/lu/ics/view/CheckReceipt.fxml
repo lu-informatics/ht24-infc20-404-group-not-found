@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="se.lu.ics.controller.ReceiptsController" alignment="CENTER" spacing="20">
+    <children>
+        <Label text="Receipts" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        
+        <ScrollPane prefHeight="400.0" prefWidth="400.0" maxWidth="600.0"> <!-- Adjusted width -->
+            <VBox fx:id="receiptsVBox" spacing="10" alignment="CENTER" /> <!-- Center alignment for receiptsVBox -->
+        </ScrollPane>
+
+        <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+    </children>
+</VBox>

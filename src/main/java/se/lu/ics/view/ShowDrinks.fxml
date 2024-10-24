@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="se.lu.ics.controller.DrinkController">
+    <Label text="Drink list" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <ListView fx:id="drinkListView" />
+    <Button text="Back" onAction="#handleBackButton" />
+</VBox>

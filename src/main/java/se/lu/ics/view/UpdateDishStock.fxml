@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="se.lu.ics.controller.DishUpdateController" alignment="CENTER" spacing="20" prefWidth="300" prefHeight="250">
+
+    <Label text="Update Dish Stock" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <HBox alignment="CENTER" spacing="10">
+        <TextField fx:id="dishNameField" promptText="Enter Dish Name" prefWidth="200" minWidth="150" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <TextField fx:id="newDishStockField" promptText="Enter New Dish Stock" prefWidth="200" minWidth="150" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="updateDishStockButton" text="Update Stock" onAction="#updateDishStock" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label fx:id="messageLabel" text="" style="-fx-font-size: 14px; -fx-text-fill: red;" />
+    </HBox>
+
+    <Button text="Cancel" onAction="#closeDialog" />
+</VBox>
